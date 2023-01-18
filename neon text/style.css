@@ -1,0 +1,61 @@
+@font-face {
+	font-family : Love;
+	src : url(./ThesecretloveMediumreguler-lgxEw.otf);
+}
+
+body {
+	font-family : Love;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	min-height : 100vh;
+	box-sizing : border-box;
+	margin : 0;
+	background : linear-gradient(0deg , #111 , #222);
+}
+
+span.space {
+	margin : 0.5em;
+	
+}
+
+
+h2 {
+	font-size : 3rem;
+	color : transparent;
+}
+
+
+h2 span {
+	animation : animate 3s linear infinite;
+	animation-delay : calc(0.1s * var(--i));
+}
+
+
+
+@keyframes animate {
+	0% {
+		color : #fff;
+		filter :  hue-rotate(0deg);
+		text-shadow : 0 0 10px #00b3ff,
+		0 0 20px #00b3ff,
+		0 0 40px #00b3ff,
+		0 0 60px #00b3ff,
+		0 0 80px #00b3ff,
+		0 0 100px #00b3ff;
+	}
+	30% , 60% {
+		color : #fff;
+		filter :  hue-rotate(360deg);
+		text-shadow : 0 0 10px hue-rotate(360deg),
+		0 0 20px hue-rotate(360deg),
+		0 0 30px hue-rotate(360deg),
+		0 0 40px hue-rotate(360deg),
+		0 0 50px hue-rotate(360deg),
+		0 0 60px hue-rotate(360deg);
+	}
+	70% , 100% {
+		color : transparent ;
+		filter : blur(2px) hue-rotate(360deg);
+	}
+}

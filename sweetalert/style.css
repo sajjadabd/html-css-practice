@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Sahel;
+  src: url(./fonts/Sahel-Bold-FD.ttf);
+}
+
+html {
+  font-family : Sahel;
+}
+
+body {
+  font-family : 'Sahel';
+  height : 100vh;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-family : 'Sahel';
+  font-size : 2em;
+  padding : 0 1em;
+  cursor : pointer;
+}
+
+
+.swal-title {
+  font-family : Sahel;
+}

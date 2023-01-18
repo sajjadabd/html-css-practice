@@ -1,0 +1,18 @@
+body {
+	margin : 0;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	min-height : 100vh;
+}
+
+
+h1 {
+	margin : 0;
+	padding : 0;
+	outline : none;
+	text-shadow : 10px 10px 0 #01ded3;
+	font-family : Tahoma;
+	font-size : 5rem;
+	color : purple ;
+}
